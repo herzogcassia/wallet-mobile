@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import Login from './src/Pages/Login/Login';
+import SingUp from './src/Pages/SingUp/SingUp';
 
 
 
@@ -8,7 +8,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView >
-      <Login/>
+      <SingUp/>
     </SafeAreaView>
   );
 }

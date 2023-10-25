@@ -3,6 +3,7 @@ import { Text, TextInput, View } from 'react-native'
 import styles from './styles'
 import Svg, { Path } from 'react-native-svg'
 import ProfileIcon from '../../Assets/Icons/ProfileIcon'
+import EmailIcon from '../../Assets/Icons/EmailIcon'
 
 type props = {
     label: string,
@@ -23,14 +24,13 @@ const TextInputComponent = ({ props }: IProps) => {
   
 
     const enumSvgInput: enumSvg = {
-        ['Email']: <ProfileIcon/>,
+        ['Email']: <EmailIcon/>,
         ['Usuário']: <ProfileIcon />,
         
     }
 
     return (
         <View>
-            <Text style={styles.label}>{props.label}</Text>
             <View style={styles.container}>
                 {enumSvgInput[props.label]}
                 <TextInput style={styles.input}
